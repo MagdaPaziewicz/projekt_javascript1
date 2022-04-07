@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budżet domowy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="result" class="result">Możesz jeszcze wydać 0 złoty</h1>
+    <div class="ever">
+        <div class="revenues_section">
+            <h2>PRZYCHODY</h2>
+            <form id="revenuesCalculator" class="revenues_form">
+                <input type="text" placeholder="Nazwa przychodu">
+                <input type="text" placeholder="Kwota">
+                <button id="revenuesBtn" type="submit">Dodaj</button>
+            </form>
+            <div>
+                <ul id="revenuesDOM" class="revenues_DOM"></ul>
+                <div class="revenues_buttons"></div>
+            </div>
+            <p>
+                <span>Suma przychodów:</span>
+                <span id="sumRevenues">0zł</span>
+            </p>
+        </div>
+        <div class="expenses_section">
+            <h2>WYDATKI</h2>
+            <form id="expensesCalculator" class="expenses_form">
+                <input type="text" placeholder="Nazwa wydatku">
+                <input type="text" placeholder="Kwota">
+                <button id="expensesBtn" type="submit">Dodaj</button>
+            </form>
+            <div>
+                 <ol id="expensesDOM" class="expenses_DOM"></ol>
+                 <div class="expenses_buttons"></div>
+            </div>
+            <p>
+                <span>Suma wydatków:</span>
+                <span id="sumExpenses">0zł</span>
+            </p>
+        </div>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>
